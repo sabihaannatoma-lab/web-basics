@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabiha's First Website</title>
     <style>
-        /* CSS diye website-ta ektu shundor korchi */
+        /* CSS for Styling */
         body {
             background-color: #f4f7f6;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,12 +17,21 @@
             background-color: white;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             display: inline-block;
             max-width: 500px;
+            width: 90%;
         }
         h1 {
             color: #2c3e50;
+        }
+        /* Image styling */
+        .web-image {
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         ul {
             text-align: left;
@@ -36,6 +46,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
+            margin-top: 15px;
         }
         button:hover {
             background-color: #2980b9;
@@ -48,17 +59,19 @@
         <h1>Welcome to My Website! 🌐</h1>
         <p>Hi, I am <strong>Sabiha</strong>. I am an aspiring Software Engineer learning Web Development.</p>
         
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Coding Laptop" class="web-image">
+
         <hr>
         
         <h3>Current Learning Goals:</h3>
         <ul>
-            <li>HTML Structure</li>
-            <li>CSS Styling (Just started!)</li>
-            <li>GitHub Pages Hosting</li>
+            <li>HTML Structure & Semantics</li>
+            <li>CSS Styling & Layouts</li>
+            <li>GitHub Pages Deployment</li>
         </ul>
 
         <p>Click the button below to see a message:</p>
-        <button onclick="alert('Congratulations! You successfully updated your code!')">
+        <button onclick="alert('Congratulations! Your website with image is now live!')">
             Click Me!
         </button>
     </div>
