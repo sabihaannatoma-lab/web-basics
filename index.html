@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <title>Sabiha's First Website</title>
+    <style>
+        /* CSS diye website-ta ektu shundor korchi */
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+            max-width: 500px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My First Web Page</h1>
-    <p>Hi, I am Sabiha. I am currently learning Web Development.</p>
-    
-    <h2>About My Journey</h2>
-    <p>I have just finished practicing C programming basics, and now I am starting to learn HTML on GitHub. This is my very first practice file!</p>
+    <div class="container">
+        <h1>Welcome to My Website! 🌐</h1>
+        <p>Hi, I am <strong>Sabiha</strong>. I am an aspiring Software Engineer learning Web Development.</p>
+        
+        <hr>
+        
+        <h3>Current Learning Goals:</h3>
+        <ul>
+            <li>HTML Structure</li>
+            <li>CSS Styling (Just started!)</li>
+            <li>GitHub Pages Hosting</li>
+        </ul>
 
-    <h3>My Goals:</h3>
-    <ul>
-        <li>Learn HTML Structure</li>
-        <li>Design with CSS</li>
-        <li>Build Responsive Websites</li>
-    </ul>
-
-    <p>Try clicking the button below:</p>
-    <button onclick="alert('Hello! Welcome to my website')">Click Me</button>
+        <p>Click the button below to see a message:</p>
+        <button onclick="alert('Congratulations! You successfully updated your code!')">
+            Click Me!
+        </button>
+    </div>
 
 </body>
 </html>
