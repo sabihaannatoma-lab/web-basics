@@ -1,62 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabiha's First Website</title>
-    <style>
-        /* CSS for Styling */
-        body {
-            background-color: #f4f7f6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            padding: 50px;
-            color: #333;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            display: inline-block;
-            max-width: 500px;
-            width: 90%;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        /* Image styling */
-        .web-image {
-            border-radius: 10px;
-            margin: 20px 0;
-            width: 100%;
-            max-width: 350px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        ul {
-            text-align: left;
-            display: inline-block;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-            margin-top: 15px;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Welcome to My Website! </h1>
+        <h1>Welcome to My Website! 🌐</h1>
         <p>Hi, I am <strong>Sabiha</strong>. I am an aspiring Software Engineer learning Web Development.</p>
         
         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Coding Laptop" class="web-image">
@@ -71,15 +25,16 @@
         </ul>
 
         <p>Click the button below to see a message:</p>
-        <button onclick="alert('Congratulations! Your website with image is now live!')">
+        <button class="btn btn-primary" onclick="alert('Congratulations! Your website is now clean and professional!')">
             Click Me!
         </button>
+
         <br>
-<a href="projects.html">
-    <button style="background-color: #2ecc71; margin-top: 10px; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
-        View My Projects 
-    </button>
-</a>
+        <a href="projects.html">
+            <button class="btn btn-success" style="margin-top: 10px;">
+                View My Projects 🚀
+            </button>
+        </a>
     </div>
 
 </body>
