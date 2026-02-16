@@ -9,6 +9,10 @@
 <body>
 
     <div class="container">
+        <button class="btn btn-dark" onclick="toggleDarkMode()" style="margin-bottom: 20px;">
+            Toggle Dark Mode 🌙
+        </button>
+
         <h1>My C Programming Projects 💻</h1>
         <p>Software Engineering-er journey-te amar kora kichu kaj:</p>
 
@@ -27,6 +31,12 @@
         <br>
         <a href="index.html" class="btn btn-dark">← Back to Home</a>
     </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
 
 </body>
 </html>
