@@ -14,15 +14,38 @@
         </button>
 
         <script>
+            // 1. Check for saved theme preference when the page loads
+            window.onload = function() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                    updateButton(true);
+                }
+            };
+
             function toggleDarkMode() {
                 const body = document.body;
-                body.classList.toggle('dark-theme');
+                const isDark = body.classList.toggle('dark-theme');
                 
-                const btn = document.querySelector('.btn-dark');
-                if (body.classList.contains('dark-theme')) {
-                    btn.innerHTML = "Switch to Light Mode ☀️";
+                // 2. Save the user's preference to localStorage
+                if (isDark) {
+                    localStorage.setItem('theme', 'dark');
                 } else {
-                    btn.innerHTML = "Toggle Dark Mode 🌙";
+                    localStorage.setItem('theme', 'light');
+                }
+                
+                updateButton(isDark);
+            }
+
+            // 3. Function to update the button text and icon
+            function updateButton(isDark) {
+                const btn = document.querySelector('.btn-dark');
+                if (btn) {
+                    if (isDark) {
+                        btn.innerHTML = "Switch to Light Mode ☀️";
+                    } else {
+                        btn.innerHTML = "Toggle Dark Mode 🌙";
+                    }
                 }
             }
         </script>
