@@ -9,18 +9,27 @@
 </head>
 <body>
 
-    <div class="container">
-        <button class="btn btn-dark" onclick="toggleDarkMode()" style="margin-bottom: 20px;">
-    Toggle Dark Mode 🌙
-</button>
+    <button class="btn btn-dark" onclick="toggleDarkMode()" style="margin-bottom: 20px;">
+        Toggle Dark Mode 🌙
+    </button>
 
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle('dark-theme');
-    }
-</script>
-        <h1>Welcome to My Website! 🌐</h1>
-        <p>Hi, I am <strong>Sabiha</strong>. I am an aspiring Software Engineer learning Web Development.</p>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-theme');
+            
+            const btn = document.querySelector('.btn-dark');
+            if (body.classList.contains('dark-theme')) {
+                btn.innerHTML = "Switch to Light Mode ☀️";
+            } else {
+                btn.innerHTML = "Toggle Dark Mode 🌙";
+            }
+        }
+    </script>
+
+
+    
+    
         
         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Coding Laptop" class="web-image">
 
